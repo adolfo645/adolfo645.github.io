@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <section> <!--Navigation bar between webpages-->
+        <nav class="navbar">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+         </nav>
+      </section>
+      <h1>Contact</h1>
+
+      <!--Form section begins-->
+      <div class="wrapper">
+        <section class="form">
+
+        <form action="https://formspree.io/f/mvojpelp" method="POST">
+            <input type="hidden" name="myhidden" value="adolfo645@hotmail.com">
+            <fieldset>
+                <p>
+                    Hi! Please fill out the following contact form so that we can get to know each other better and expand both of our networks:
+                </p>
+            <legend>Your Information</legend>
+            <label for="firstname">
+                First name:
+            </label>
+                    <input type="text" id="firstname" name="firstname" placeholder="First name only!"required>
+            <label for="lastname">
+                Last name:
+            </label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last name only!">
+            <label for="email">
+                Email:
+            </label>
+                    <input type="email" id="email" name="email" required>
+            <textarea for="comment" placeholder="Leave your comments!"></textarea>
+            <label for="number">
+                Add your local phone number:
+            </label>
+                <input type="tel" id="number" name="number" placeholder="Don't forget area code!" required>
+            <label for="date">
+                Set up a date if you wan tus to meet and expand our network!
+            </label>
+                <input type="date" id="date" name="date">
+            <button type="submit">Done!</button>  
+            </fieldset>
+        </form>
+    </section>
+    <aside>
+        <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1676.4583917888074!2d34.99721185514976!3d32.8209698251363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151dba3442eb46bd%3A0xa5aa61d06e9a9c6e!2sUlpan%20Etzion%20Carmel!5e0!3m2!1ses!2sil!4v1688565984828!5m2!1ses!2sil" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h2>Where you could find me <span>&#8593;</span></h2>
+    </aside>
+      </div>
+    <script src="js/forms.js"></script>
+</body>
+</html>

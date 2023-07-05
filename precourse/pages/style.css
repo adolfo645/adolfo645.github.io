@@ -1,0 +1,153 @@
+/*color.adobe.com
+for consistent color palets*/
+
+
+/*This makes changes in width and height
+to consider and include padding and border,
+it is a good piece of code to include by
+default on any webpage as it avoids unexpected layout issues and makes it easier to calculate and manage
+space for the elements that are or will be shown.*/
+* {
+  box-sizing: border-box;
+}
+
+
+body { /*Style for bg, font family and body height*/
+  background-image: linear-gradient(to Ttop, rgb(117, 132, 132), white);
+  font-family: 'Architects Daughter', cursive;
+  height: 100vh;
+}
+
+/*Separate selectors with commas to wrap them
+together and make "grouped selectors"*/
+#profile-name {
+  font-style: italic;
+  margin-bottom: -0.8rem;
+}
+
+/*Style for card: 
+  -Item alignment.
+  -Bg color.
+  -Border radius.
+  -Display type.
+  -Display direction.
+  -Content justification.
+  -Margin and padding.
+*/
+.card { 
+  align-items: center;
+  background-color: #2a9df4;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 55px;
+  /*Separates card from nav bar*/
+  padding: 0.95rem;
+}
+
+.card:hover {
+  color: white;
+}
+
+.card:active {
+    animation: bounce 0.55s linear;
+  }
+  
+  @keyframes bounce {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(0.5); }
+    100% { transform: scale(1); }
+  }
+
+/*Style for nav item, alignment and color*/
+.nav-item {
+  align-self: flex-end;
+}
+
+/*Style for wrapper
+HTML part missing*/
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+/*Style for profile image, border radius, width and height*/
+.profile-image {
+  border: 0.125rem solid black;
+  border-radius: 50%;
+  height: 11.25rem;
+  width: 11.25rem;
+}
+
+
+/*START OF NAVBAR STYLING*/
+.navbar {
+  margin-top: -1rem;
+  position: fixed;
+  /*Ensures that the nav bar moves along with the scrolling*/
+  top: 0;
+  left: 0;
+  /*top and left ensure the fixed position of the nav bar*/
+  width: 100%;
+  /*Makes the nav bar occupy the whole width of the page*/
+  z-index: 9999;
+  /*Ensures the nav bar going over any future element*/
+}
+
+.navbar ul {
+  background-color: #2a9df4;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 0;
+  /*Avoids padding so it does not leave parts of the <li> uncolored when hovering the mouse*/
+}
+
+.navbar li {
+  flex-grow: 1;
+  /*Makes the items take space evenly*/
+  text-align:center;
+}
+
+.navbar a {
+  display: block;
+  width: 100%;
+  height: 100;
+  /*Three previous attribute block the size of the element <a> to make it occupy the whole area of its parent tag,
+  which would be the <li> tag*/
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.navbar li:hover {
+  background-color: #fffccc;
+}
+
+footer {
+  margin-top: 10px;
+}
+/*END OF NAVBAR STYLING*/
+
+/*START OF MY-LINKS STYLING*/
+.my-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.my-links li {
+  display: inline-block;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.my-links li a {
+  color: white;
+  font-size: 1.5rem;
+}
